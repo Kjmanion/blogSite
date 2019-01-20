@@ -20,7 +20,7 @@ Following that revelation, here is my short history with databases and how I am 
 
 Harvard's CS50 class, provided by EdX, was really a great introduction to SQL and databases (in addition to programming.) An assigned project was creating a site that sold stocks. A user could create their account, log in, and buy and sell stocks with their funny money of 10,000 that each user was given. Queries were made from multiple tables to return information for a website on a flask project. While I had only put my toes in the water, it was in the adult pool.
 
-## Time passes on...
+## Time passes on
 
 A post on Medium entitled, "Why you should care about PostGIS?" by Topi Tjukanov appeared a few months ago. [Here)](https://medium.com/@tjukanov/why-should-you-care-about-postgis-a-gentle-introduction-to-spatial-databases-9eccd26bc42b) is a link to it. It revealed, to myself, the power of a free and open source tool called PostGIS, that Topi uses to make amazing work. The key thing for me was the Spatial SQL, or part two of his post. One is basically able to combine select by attribute and select by location into one SQL query with PostGIS and PostgreSQL. I got to the, "How to get started section" and was using DB Manager in QGIS, which I had never used before.
 

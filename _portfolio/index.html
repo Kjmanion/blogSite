@@ -18,12 +18,10 @@ permalink: /portfolio/index.html
     </nav>
 </header>
 
-<h2>Samples of Work to come!</h2>
 
 {% for item in site.portfolio %}
     {% if forloop.index > 1 %}
         <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
         <p>{{ item.description }}</p>
-        <p><a href="{{ item.url }}">{{ item.title }}</a></p>
     {% endif %}
 {% endfor %}
