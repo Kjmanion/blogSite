@@ -10,19 +10,19 @@ share: true
 
 # Why the Command Line for GIS?
 
-I had been looking for a general topic to write about for some time. This period coincided with being asked to give a presentation to employees at work who have little Python or any programming experience. I told them to join the club as one who doesn't have much experience in Python (but am actively chaing that.) However, it was that this point that I thought of a developer developing without experience in using the command line. There are so many tools in the CLI that it would be strange to meet a developer who doesn't use the CLI.
+I had been looking for a general topic to write about for some time. This period coincided with being asked to give a presentation to employees at work who have little Python or any programming experience. I told them to join the club as one who doesn't have much experience in Python (but am changing that.) However, it was that this point that I thought of a developer developing without experience in using the command line. There are so many tools in the CLI that it would be strange to meet a developer who doesn't use the CLI.
 
-You're likely at this point saying," but Kevin, GIS professionals are not developers and there is no need for them to use the command line." My response for this would be that the command line can be another tool in the bat-utility belt of GIS professionals. It wasn't until recently that I became aware of such tools that are created for GIS. One more reason is that the, 'IS' in, 'GIS' usually stands for Information Systems, so we should be expected to be into technology, if not the general area of expertise we use GIS for. I have to credit the blog post [here](http://blog.geomusings.com/2013/01/30/yes-you-need-to-code/), for expressing that second reason better than I can. It's a bit dated, it still applies, probably more so now than then.
+You're likely at this point saying,"But Kevin, GIS professionals are not developers and there is no need for them to use the command line." My response for this would be that the command line can be another tool in the bat-utility belt of GIS professionals. It wasn't until recently that I became aware of such tools that are created for GIS. One more reason is that the, 'IS' in, 'GIS' usually stands for Information Systems, so we should be expected to be into technology, if not the general area of expertise we use GIS for. I have to credit the blog post [here](http://blog.geomusings.com/2013/01/30/yes-you-need-to-code/), for expressing that second reason better than I can. It's a bit dated, it still applies, probably more so now than then.
 
 ### What is the Command Line?
 
-The command line is a way to interact with files without the use of the GUI that your operating system provides. It's essentially a text-based windows explorer, which, like text-based games, can feel a bit confusing the first few times you use it.Tthose of us who are used to pointing and clicking can especially feel lost. Well friend, I am here to alleviate those worries. I used to be someone who shunned anything have to do with development, command line, etc, but have gotten used to use the command line every day in my learnings. 
+The command line is a way to interact with files without the use of the GUI that your operating system provides. It's essentially a text-based windows explorer, which, like text-based games, can feel a bit confusing the first few times you use it. Those of us who are used to pointing and clicking can especially feel lost. Well friend, I am here to alleviate those worries. I used to be someone who shunned anything have to do with development, command line, etc, but have gotten used to use the command line every day in my learnings. 
 
 ### Why use the Command Line?
 
-The main reason for this are the tools that can be used in the CLI, or command line interface. These are functions that you may not have use for everyday, but come in handy in the right situation. I'll give some examples both recent and not so recent. When I was learning Web Development, I quickly got tired of refreshing a html page everytime I changed the html, css, or javascript. I found a command line tool to fix that pain called browser-sync. It automatically refreshed the page in the browser everytime I made a change to the scripts. It was very convenient and it was run through the command line. 
+The main reason for this are the tools that can be used in the CLI, or command line interface. These are functions that you may not have use for everyday, but come in handy in the right situation. I'll give some examples both recent and not so recent. When I was learning Web Development, I quickly got tired of refreshing a html page everytime I changed the html, css, or javascript. I found a command line tool to udr called browser-sync. It automatically refreshed the page in the browser everytime I made a change to the script. It was very convenient and it was run through the command line. 
 
-A few weeks ago I had a bunch of photos I wanted to be made into a point layer. Their placement would be based on their coordinates, as geolocation was turned on the iPhone. These coordinates were located in the properties of the file. It looked like a python script was in my future, but I found a command line tool that works with images called exiftool. I naviagated to the folder of photos then ran the tool to export all attributes for every photo in the folder to a CSV. A task that would have taken sometime to copy and paste the data from propeties or write a script was only one line in the CLI.
+A few weeks ago I had a bunch of photos I wanted to be made into a point layer. Their placement would be based on their coordinates, as they were geotagged on the phone they were taken on. These coordinates were located in the properties of the file. It looked like a python script was in my future, but I found a command line tool that works with images called exiftool. I naviagated to the folder of photos then ran the tool to export all attributes for every photo in the folder to a CSV. A task that would have taken sometime to copy and paste the data from propeties or write a script was only one line in the CLI.
 
 ### GIS Tools: ogrinfo
 
@@ -40,7 +40,7 @@ or like this:
 
 ![listings of the features](../../images/ogrinfo_AL.png)
 
-There are many ways to explore your data and it helps to be aware of what ogrinfo can do for a GIS user. I only recently became aware of these tools so I'm still learning them as well!
+There are many ways to explore your data and it helps to be aware of what ogrinfo can do for a GIS user. I only recently became aware of these tools so I'm still learning them as well.
 
 ### GIS Tools: ogr2ogr
 

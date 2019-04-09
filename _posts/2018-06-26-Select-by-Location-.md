@@ -10,11 +10,11 @@ share: true
 
 # Continuing with ArcPy
 
-This is a continuation of my revelatory (to myself) ability to automate map production with the mapping module of ArcPy. These are all basic functions in ArcMap, but one must start with the basics! This will be a post based on a problem that can be solved using ArcMap, but can be automated much quicker with ArcPy. A Select By Location is as basic as they come, but getting to automate it (for a problem that doesn't exist) still felt good.
+This is a continuation of automating map production with ArcPy post. These are all basic functions in ArcMap, but one must start with the basics! This will be a post based on a problem that can be solved using ArcMap, but can be automated much quicker with ArcPy. A Select By Location is as basic as they come, but getting to automate it still felt good.
 
 ## The Problem
 
-I have a point layer of all child care facilities in the county. I want to make a map of each one in a layout I have created before hand. However, I also want to know which type of zoning each resides in first. (As I said before, this doesn't really solve a problem, but it does let us use a select by location query.) My solution, will be to iterate through each point, do a select by location of the zoning polygon layer to select the zone where that point resides, and then print a map with that data on it. Essentially, here is the code:
+I have a point layer of all child care facilities in the county. I want to make a map of each one in a layout I have created before hand. I also want to know which type of zoning each reside in. My solution will be to iterate through each point, do a select by location of the zoning polygon layer to select the zone where that point resides, and then print a map with that data on it. Here is the code:
 
 ```python
 POI = arcpy.MakeFeatureLayer_management("C:\\Users\\Kevin\\Desktop\\StateProjects\\arcgisProFiles\\AA_POI.shp", "POI",  "\"CATEGORY\" LIKE '%CHILD%'")
@@ -26,8 +26,8 @@ for row in cursor:
     pt_lyr = arcpy.MakeFeatureLayer_management("C:\\Users\\Kevin\\Desktop\\StateProjects\\arcgisProFiles\\AA_POI.shp", "pt_lyr",  "\"FID\"={}".format(str(row[0])))
     arcpy.SelectLayerByLocation_management('zones', "CONTAINS", 'pt_lyr', "", "NEW_SELECTION")
     cursor2 = arcpy.da.SearchCursor('zones', ["FID", "TYPE"])
-    for type in cursor2:
-        newData.append(type[1])
+    for typeOf in cursor2:
+        newData.append(typeOf[1])
     newData.append(row[1])
     newData.append(row[2])
     careMaps.append(newData)
@@ -39,4 +39,4 @@ The Select by location is key to get the necessary data out of the layer. The fi
 
 ## Still learning
 
-This is all an exercise in reviewing how I got to this point. It was not an easy process as I spent more than 5 hours this weekend getting the syntax right. I aim on continuing exploring ArcPy and hope it gets more familar as time goes by...
+This is all an exercise in reviewing how I got to this point. It was not an easy process as I spent more than a few hours this weekend getting the syntax right. I aim on continuing exploring ArcPy and hope it gets more familar as time goes by.

@@ -14,7 +14,7 @@ A few weeks ago I was listening to a podcast that mentioned the value of the you
 
 ## A Shameful Secret
 
-Yes, dear reader, I used to play Dota. I don't play much anymore, but I wondered if I could get access to my stats. Of course there was a python library, dota2api, that made it easy to get them in a spreadsheet. I would say the number of games that it returned, but I'm too embarassed. So without further ado, let's get into the data and libraries.
+Yes, dear reader, I play Dota. I don't play as much anymore, but I wondered if I could get access to my stats. There was a python library, dota2api, that made it easy to get them in a spreadsheet. I would say the number of games that it returned, but I'm too embarrassed. So without further ado, let's get into the data and libraries.
 
 ## The Toolkit
 
@@ -22,18 +22,18 @@ Pandas is a python library that analyzes data within python. Before I even playe
 
 ![Dota 2 spreadsheet in excel](../../images/dota_sheet.png)
 
-It's just some a mess of data. It actually looked worse as I had to figure out how to put it in a presentable format for pandas using python and the dota2api library. I now understand why so much time can be used to clean data. From here on out, I'll be doing the coding in a jupyter notebook, which is another tool of the data scientist. There are individual cells that run and you can immediately see the results printed out underneath that cell. I'm using anaconda to manage my python environments and jupyter notebooks. You can get anaconda [here](https://www.anaconda.com/download/)
+It's just some a mess of data. It actually looked worse as I had to figure out how to put it in a presentable format for pandas using python and the dota2api library. I now understand why so much time can be used to clean data. From here on out, I'll be doing the coding in a jupyter notebook, which is another tool of the data scientist. There are individual cells that run and you can immediately see the results printed out underneath that cell. I'm using anaconda to manage my python environments and Jupyter notebooks. You can get anaconda [here](https://www.anaconda.com/download/)
 
-Now that you know all of what I used to get pandas into a jupyter notebook, here is our first 'cell', or what a snippet of code in a notebook is called.
+Now that you know all of what I used to get pandas into a Jupyter notebook, here is our first 'cell', or what a snippet of code in a notebook is called.
 
 ```
 import pandas as pd
 games = pd.read_csv('testing.csv')
 ```
 
-Click run in the notebook or Shift+Enter on the keyboard to execute the code. Nothing should be returned here. The testing.csv is saved to a variable called games. This variable's type is a pandas DataFrame. The other type of variable found in pandas is called a series. A series is a one dimensionally labeled list that contains any type of data, while the dataframe is two dimensional with rows and columns. Each column has it's own unique data type. The Pandas documentation says dataframes can be thought of as a, "dict-like container for series objects."
+Click run in the notebook or Shift+Enter on the keyboard to execute the code. Nothing should be returned here. The testing.csv is saved to a variable called games. This variable's type is a pandas DataFrame. The other type of variable found in pandas is called a series. A series is a one dimension labeled list that contains any type of data, while the dataframe is two dimensional with rows and columns. Each column has it's own unique data type. The Pandas documentation says dataframes can be thought of as a, "dict-like container for series objects."
 
-If you type only 'games' into the next jupyter cell and run it, here is what you will see:
+If you type only 'games' into the next Jupyter cell and run it, here is what you will see:
 
 ![Dota 2 spreadsheet in pandas](../../images/dota_pandas.png)
 
